@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Về Bản Thân</title>
+    <link rel="stylesheet" href="test4.css"> 
+</head>
+<body>
+    <header>
+        <img src="https://reviewedu.net/wp-content/uploads/2021/08/dh-thu-do-hn.jpg" alt="Logo" class="logo">
+        <img src="https://media.viez.vn/prod/2022/8/17/Thiet_ke_chua_co_ten_2022_08_17_T135151_578_6550401da4.png" alt="Ảnh bìa" class="cover">
+    </header>
+
+    <nav>
+        <a href="#about" onclick="showSection('#about')"><img src="https://www.gifcen.com/wp-content/uploads/2021/06/meme-gif-8.gif" alt="Về Tôi">Về Tôi</a>
+        <a href="#education" onclick="showSection('#education')"><img src="https://media.tenor.co/images/214c1180c1f86075129e52e0c4204c38/tenor.gif" alt="Học Vấn">Học Vấn</a>
+        <a href="#skills" onclick="showSection('#skills')"><img src="https://media.tenor.com/Paw_4BvV19YAAAAC/skill-issue-skill.gif" alt="Kỹ Năng">Kỹ Năng</a>
+        <a href="#projects" onclick="showSection('#projects')"><img src="https://c.tenor.com/mJ9Gzq10Dc4AAAAM/thats-a-good-plan-saturday-night-live.gif" alt="Dự Án">Dự Án</a>
+        <a href="#contact" onclick="showSection('#contact')"><img src="https://th.bing.com/th/id/R.d4bcd8f6b91d5b9ba10c3487e1c01402?rik=gXw7VgfRy3Fp%2bg&pid=ImgRaw&r=0" alt="Liên Hệ">Liên Hệ</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>Về Tôi</h2>
+            <p>
+                Xin chào! Tôi là Lê Trung Hiếu, một sinh viên đam mê công nghệ.
+            </p>
+            <p>
+                Với kinh nghiệm làm việc trong môi trường học vấn, tôi tự tin vào khả năng giải quyết các vấn đề phức tạp.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Học Vấn</h2>
+            <p>
+                Tôi đã tốt nghiệp THPT quốc gia và hiện tại đang học ở trường HNMU.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Kỹ Năng</h2>
+            <p>
+                Dưới đây là các kỹ năng tôi đã phát triển qua nhiều năm làm việc:
+            </p>
+            <ul>
+                <li>Lập trình web với HTML, CSS, JavaScript</li>
+                <li>Phát triển ứng dụng với Python và Java</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Dự Án</h2>
+            <p>
+                Tôi đã tham gia vào nhiều dự án, bao gồm phát triển trang web giới thiệu sản phẩm cho một công ty khởi nghiệp.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Liên Hệ</h2>
+            <p>
+                Nếu bạn muốn kết nối với tôi, vui lòng liên hệ qua email: <a href="tulenhtaungam2025@gmail.com">Email Hiếu Trung</a>. Hoặc kết nối qua Facebook: <a href="https://www.facebook.com/profile.php?id=100046663641547">[Hiếu Trung]</a>.
+        </section>
+    </div>
+
+    <script>
+        // Hàm để hiển thị phần tương ứng và ẩn các phần khác
+        function showSection(targetId) {
+            document.querySelectorAll('.container section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector(targetId).style.display = 'block';
+        }
+
+        // Hiển thị phần "Về Tôi" khi trang được tải lần đầu
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('#about');
+        });
+    </script>
+</body>
+</html>

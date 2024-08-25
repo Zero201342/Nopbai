@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-science-and-technology-intelligence-era-blue-technology-background-backgroundtechnology-backgroundlightcool-backgroundbackgroundhome-image_72783.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+header img.cover {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Chiều cao tối đa của phần bìa */
+    object-fit: cover; /* Cắt lấy phần giữa của ảnh */
+    display: block;
+}
+
+header img.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Màu nền trắng mờ */
+    border-radius: 15px; /* Bo góc khung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng để làm nổi bật khung */
+}
+
+h2 {
+    text-align: center;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+}
+
+p:nth-child(odd) {
+    color: #0066cc;
+}
+
+p:nth-child(even) {
+    color: #cc3300;
+}
+
+ul li {
+    color: #cc00cc;
+}
